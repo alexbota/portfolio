@@ -28,15 +28,39 @@ export const DotContainer = styled.div`
 `;
 
 export const Dot = styled.span`
+  position: relative;
+  flex: 0 1 auto;
+  width: 40px;
+  height: 4px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-indent: -999px;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
   background-color: ${(props) => (props.isActive ? '#717171' : '#bbb')};
-  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+
   &:hover {
     background-color: #717171;
+  }
+
+  &:after {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: '';
+  }
+
+  &:before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: '';
   }
 `;

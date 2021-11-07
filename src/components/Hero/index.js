@@ -48,7 +48,7 @@ const Hero = () => {
             onClick={() => document.getElementById('footer').scrollIntoView()}
             className="text-center bg-main-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-lg md:py-3 md:px-5"
           >
-            View my work
+            Get in touch
           </button>
         </div>
         <Laptop />

@@ -7,7 +7,7 @@ const Service = () => {
   return (
     <div className="bg-background-secondary px-6">
       <div className="container mx-auto py-14">
-        <h2 className="text-center text-3xl md:text-4xl font-bold pt-14 mt-14 mb-24 text-text-primary tracking-wide tracking-widest">
+        <h2 className="text-center text-4xl md:text-4xl font-bold pt-14 mt-14 mb-24 text-text-primary tracking-wide tracking-widest">
           Services Spectrum
         </h2>
         <div className="grid lg:grid-cols-3 justify-center text-text-primary gap-6 mx-6 mb-32">

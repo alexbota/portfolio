@@ -7,8 +7,8 @@ import React from 'react';
 const Work = () => {
   return (
     <>
-      <div className="bg-background-secondary text-text-primary h-110 px-6">
-        <div className="container mx-auto pt-32 max-w-screen-lg flex flex-col md:flex-row justify-between">
+      <div className="bg-background-secondary text-text-primary h-120 px-6">
+        <div className="container mx-auto pt-44 max-w-screen-lg flex flex-col md:flex-row justify-between">
           <h2 className="text-4xl font-bold mb-5 tracking-widest flex-none">
             Projects
           </h2>
