@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../hoc/Layout';
-import underconstruction from '../images/underconstruction.svg';
+import construction from '../images/construction.svg';
 import { navigate } from 'gatsby';
 
 const NotFoundPage = () => {
@@ -12,7 +12,7 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <div className="container mx-auto px-6 h-3/6 flex flex-col items-center justify-center mb-20">
-        <img className="h-110 w-110" src={underconstruction} alt="" />
+        <img className="h-110 w-110" src={construction} alt="" />
         <h1 className="text-4xl font-bold text-background-intermediary mb-6 text-center">
           Sorry, this section is under construction.
         </h1>
