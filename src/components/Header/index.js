@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../../resources/Logo.svg';
+import Logo from '../../images/Logo.svg';
 import { Button, Li } from './styled';
 import { FaArrowRight } from 'react-icons/fa';
 import { useContext } from 'react';
@@ -14,7 +14,11 @@ const Header = () => {
 
   const themeContext = useContext(ThemeContext);
 
-  const list = ['Profile', 'Work', 'Insights', 'Contact'];
+  const list = [
+    { page: 'Work', link: '#work' },
+    { page: 'Insights', link: '#insights' },
+    { page: 'Contact', link: '#contact' },
+  ];
 
   const handleOpenMenu = () => {
     if (isOpen) {
@@ -87,15 +91,15 @@ const Header = () => {
 
   return (
     <>
-      <div style={{ height: '65px' }}></div>
+      <div style={{ height: '65px' }} />
       <nav style={styles.navbarStyles} className="shadow-md">
         <div className="flex justify-between items-center mx-4 h-full">
           <img className="w-12" src={Logo} alt="logo" />
           <Button isOpen={isOpen} onClick={handleOpenMenu}>
-            <span></span>
-            <span></span>
+            <span />
+            <span />
           </Button>
-          <div style={{ width: '45px' }}></div>
+          <div style={{ width: '45px' }} />
         </div>
       </nav>
       <div style={styles.modalStyles}>
@@ -109,20 +113,29 @@ const Header = () => {
             Discover
           </h3>
           <ul>
-            {list.map((item) => {
+            <Li className="transform -translate-x-12 sm:-translate-x-14 md:-translate-x-16 lg:-translate-x-18 mb-5">
+              <span />
+              <div className="flex items-center">
+                <FaArrowRight className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl mr-3" />
+                <Link className="text-4xl md:text-5xl lg:text-6xl" to="/">
+                  Profile
+                </Link>
+              </div>
+            </Li>
+            {list.map((e) => {
               return (
                 <Li
-                  key={item}
-                  className="transform -translate-x-12 sm:-translate-x-14 md:-translate-x-16 lg:-translate-x-18 mb-5"
+                  key={e.page}
+                  className="transform -translate-x-12 sm:-translate-x-14 md:-translate-x-16 lg:-translate-x-18 mb-5 text-background-intermediary"
                 >
-                  <span></span>
+                  <span />
                   <div className="flex items-center">
                     <FaArrowRight className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl mr-3" />
                     <Link
                       className="text-4xl md:text-5xl lg:text-6xl"
-                      to={item}
+                      to="/404/"
                     >
-                      {item}
+                      {e.page}
                     </Link>
                   </div>
                 </Li>

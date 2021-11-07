@@ -22,35 +22,40 @@ function Laptop() {
   }
 
   return (
-    <RiveComponent onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+    <div style={{ height: '100%', width: 'auto%', objectFit: 'contain' }}>
+      <RiveComponent onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+    </div>
   );
 }
 
 const Hero = () => {
   return (
-    <>
-      <div className="mx-8 mt-14 md:mt-32 flex flex-col md:flex-row md:mb-16 md:mt-0 items-center justify-center">
-        <div className="text-center md:text-left max-w-lg flex-grow-0">
+    <div className="mx-6">
+      <div className="container mx-auto max-w-screen-lg mt-14 md:mt-32 flex flex-col md:flex-row md:mb-16 md:mt-0 items-center justify-center">
+        <div className="max-w-2xl">
           <h1 className="text-xl md:text-2xl mb-2 text-main-primary">
             Better design better experiences.
           </h1>
-          <h2 className="text-3xl font-bold mb-4 tracking-wide text-text-dark">
+          <h2 className="text-4xl font-bold mb-4 tracking-widest text-text-dark">
             Freelance UX/UI/Product Designer & Front-end developer
           </h2>
-          <p className="text-xl md:text-2xl text-text-secondary mb-7">
+          <p className="text-xl md:text-2xl font-medium text-text-secondary mb-7">
             I specialize in helping businesses integrate design and technology
             to better serve customers, extend online reach, and increase
             revenue.
           </p>
-          <button className="text-center bg-main-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-lg md:py-3 md:px-5">
+          <button
+            onClick={() => document.getElementById('footer').scrollIntoView()}
+            className="text-center bg-main-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-lg md:py-3 md:px-5"
+          >
             View my work
           </button>
         </div>
-        <div className="h-96 w-96 md:h-120 md:w-120 h z-10 relative top-40 -mt-40 md:static md:top-0 flex-grow-0">
+        <div className="w-96 h-96 z-10 relative top-40 -mt-40 md:static md:top-0">
           <Laptop />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Hero;

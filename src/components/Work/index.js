@@ -1,26 +1,28 @@
-import work_item_1 from '../../resources/work_item_1.png';
-import work_item_2 from '../../resources/work_item_2.png';
-import work_item_3 from '../../resources/work_item_3.png';
-import work_item_4 from '../../resources/work_item_4.png';
+import work_item_1 from '../../images/work_item_1.png';
+import work_item_2 from '../../images/work_item_2.png';
+import work_item_3 from '../../images/work_item_3.png';
+import work_item_4 from '../../images/work_item_4.png';
 import React from 'react';
 
-const WorkSection = () => {
+const Work = () => {
   return (
     <>
-      <div className="bg-background-intermediary text-text-primary text-center h-110 px-10 md:mx-8">
-        <h2 className="text-3xl md:text-4xl font-bold pt-32 mb-5 tracking-widest">
-          Projects
-        </h2>
-        <div className="flex justify-center">
-          <p className="text-xl md:text-2xl max-w-2xl text-center">
-            Prototypes, Digital Products (Apps, Websites, SaaS solutions) and
-            design systems which are visually pleasing, user-centric and easy to
-            use.
-          </p>
+      <div className="bg-background-secondary text-text-primary h-110 px-6">
+        <div className="container mx-auto pt-32 max-w-screen-lg flex flex-col md:flex-row justify-between">
+          <h2 className="text-4xl font-bold mb-5 tracking-widest flex-none">
+            Projects
+          </h2>
+          <div className="max-w-2xl">
+            <p className="text-xl md:text-2xl ">
+              Prototypes, Digital Products (Apps, Websites, SaaS solutions) and
+              design systems which are visually pleasing, user-centric and easy
+              to use.
+            </p>
+          </div>
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="container grid md:grid-cols-2 relative bottom-10 justify-center mx-14 gap-12">
+        <div className="container max-w-screen-xl grid md:grid-cols-2 relative bottom-10 justify-center mx-6 gap-12">
           <div className="h-150 flex flex-col bg-green-500 z-10 p-10 cursor-pointer transform transition duration-500 hover:scale-110 rounded-lg shadow-lg overflow-hidden">
             <p className="text-text-primary">Starbucks</p>
             <h3 className="text-3xl font-bold text-text-dark">
@@ -63,4 +65,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default Work;
