@@ -3,7 +3,7 @@ import { useRive } from 'rive-react';
 
 function Laptop() {
   const params = {
-    src: 'new_file.riv',
+    src: 'laptop.riv',
     autoplay: false,
   };
 
@@ -22,7 +22,7 @@ function Laptop() {
   }
 
   return (
-    <div style={{ height: '100%', width: 'auto%', objectFit: 'contain' }}>
+    <div className="w-80 h-80 lg:w-110 lg:h-110 z-10 relative top-40 -mt-40 md:static md:top-0">
       <RiveComponent onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
     </div>
   );
@@ -51,9 +51,7 @@ const Hero = () => {
             View my work
           </button>
         </div>
-        <div className="w-96 h-96 z-10 relative top-40 -mt-40 md:static md:top-0">
-          <Laptop />
-        </div>
+        <Laptop />
       </div>
     </div>
   );

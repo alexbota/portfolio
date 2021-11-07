@@ -12,7 +12,7 @@ const Work = () => {
           <h2 className="text-4xl font-bold mb-5 tracking-widest flex-none">
             Projects
           </h2>
-          <div className="max-w-2xl">
+          <div className="max-w-2xl md:ml-4">
             <p className="text-xl md:text-2xl ">
               Prototypes, Digital Products (Apps, Websites, SaaS solutions) and
               design systems which are visually pleasing, user-centric and easy
