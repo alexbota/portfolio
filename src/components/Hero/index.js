@@ -15,15 +15,9 @@ function Laptop() {
     }
   }
 
-  function onMouseLeave() {
-    if (rive) {
-      rive.pause();
-    }
-  }
-
   return (
     <div className="w-80 h-80 lg:w-110 lg:h-110 z-10 relative top-40 -mt-40 md:static md:top-0">
-      <RiveComponent onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+      <RiveComponent onMouseEnter={onMouseEnter} />
     </div>
   );
 }
@@ -46,7 +40,7 @@ const Hero = () => {
           </p>
           <button
             onClick={() => document.getElementById('footer').scrollIntoView()}
-            className="text-center bg-main-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-lg md:py-3 md:px-5"
+            className="text-center bg-gradient-to-r from-blue-700 to-main-primary hover:from-main-primary hover:to-blue-700 text-white font-bold py-2 px-4 rounded-full md:text-lg md:py-3 md:px-5"
           >
             Get in touch
           </button>

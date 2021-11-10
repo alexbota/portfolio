@@ -1,29 +1,21 @@
 import React, { useState } from 'react';
-import client_item_3 from '../../images/client_item_3.png';
-import client_item_2 from '../../images/client_item_2.jpg';
-import client_item_1 from '../../images/client_item_1.jpg';
+import client_item_2 from '../../images/client_item_2.png';
+import client_item_1 from '../../images/client_item_1.png';
 import { Dot, DotContainer, MySlide, SlideshowContainer } from './styled';
 
 const Carousel = () => {
   const slides = [
     {
-      clientName: 'John Doe',
-      clientRole: 'Founder at Kitemurt Srl',
+      clientName: 'Davide Papale',
+      clientRole: 'Senior Electrical Designer at DIEMME',
       clientPic: client_item_1,
-      clientReview:
-        "Alex is a genius in his field. His grasp of Front End development is top notch. He took my designs and delivered to me a clean and clear code base that also had best practices in mind. He's responsive and honest, and I couldn't recommend him more.",
-    },
-    {
-      clientName: 'Gianluca Feltrini',
-      clientRole: 'Project Manager at Decomat',
-      clientPic: client_item_2,
       clientReview:
         'Consistently delivering ahead of plan, with an high level of professionalism and integrity - happy to recommend!',
     },
     {
       clientName: 'Cosmin Boltea',
-      clientRole: 'Full Stack Developer at cr-b.ro',
-      clientPic: client_item_3,
+      clientRole: 'Founder at c-rb.ro',
+      clientPic: client_item_2,
       clientReview:
         "Alex is a very good team worker, thanks to his expertise our product was launched ahead of time. I'm more that satisfied by his performance.",
     },
