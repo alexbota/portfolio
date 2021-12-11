@@ -17,7 +17,7 @@ const Carousel = () => {
       clientRole: 'Project Manager at Rawvisuals',
       clientPic: client_item_2,
       clientReview:
-        'Consistently delivering ahead of plan, with an high level of professionalism and integrity - happy to recommend!',
+        "Alex is a solid developer. He quickly ramped up on our project's requirements and consistently delivered ahead of plan, with a high level of professionalism and integrity. We look forward to working with him again in the future - happy to recommend!",
     },
   ];
 

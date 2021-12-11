@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        anton: ['anton'],
+      },
       colors: {
         main: {
           primary: '#2196f3',

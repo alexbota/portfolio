@@ -19,7 +19,7 @@ const fade = keyframes`
 export const MySlide = styled.div`
   display: ${(props) => (props.isActive ? 'flex' : 'none')};
   width: 100%;
-  height: 350px;
+  height: 480px;
   animation: ${fade} 1.5s;
 `;
 

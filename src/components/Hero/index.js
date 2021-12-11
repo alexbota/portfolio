@@ -31,7 +31,8 @@ const Hero = () => {
             Better design better experiences.
           </h1>
           <h2 className="text-4xl font-bold mb-4 tracking-widest text-text-dark">
-            Freelance UX/UI/Product Designer & Front-end developer
+            UX/UI/Product Designer &{' '}
+            <span className="whitespace-nowrap">Front-end</span> developer
           </h2>
           <p className="text-xl md:text-2xl font-medium text-text-secondary mb-7">
             I specialize in helping businesses integrate design and technology
@@ -45,7 +46,7 @@ const Hero = () => {
             Get in touch
           </button>
         </div>
-        {/*<Laptop />*/}
+        <Laptop />
       </div>
     </div>
   );
