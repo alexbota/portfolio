@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-import client_item_2 from '../../images/client_item_2.png';
-import client_item_1 from '../../images/client_item_1.png';
+import client_item_1 from '../../images/client_item_1.jpg';
+import client_item_2 from '../../images/client_item_2.jpg';
 import { Dot, DotContainer, MySlide, SlideshowContainer } from './styled';
 
 const Carousel = () => {
   const slides = [
     {
-      clientName: 'Davide Papale',
-      clientRole: 'Senior Electrical Designer at DIEMME',
+      clientName: 'Emile Vanwinden',
+      clientRole: 'Paid Media Manager at Solios Watches',
       clientPic: client_item_1,
       clientReview:
-        'Consistently delivering ahead of plan, with an high level of professionalism and integrity - happy to recommend!',
+        'Alex works fast, efficiently, and understands very well the assignment that we gave him. I could not wish for a better outcome. He was extremely responsive and flexible during the project. We came up with a lot of unexpected changes during the period we were working together, and he fixed every single issue rapidly. I definitely recommend him!',
     },
     {
       clientName: 'Cosmin Boltea',
-      clientRole: 'Founder at c-rb.ro',
+      clientRole: 'Project Manager at Rawvisuals',
       clientPic: client_item_2,
       clientReview:
-        "Alex is a very good team worker, thanks to his expertise our product was launched ahead of time. I'm more that satisfied by his performance.",
+        'Consistently delivering ahead of plan, with an high level of professionalism and integrity - happy to recommend!',
     },
   ];
 

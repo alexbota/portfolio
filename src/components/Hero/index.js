@@ -45,7 +45,7 @@ const Hero = () => {
             Get in touch
           </button>
         </div>
-        <Laptop />
+        {/*<Laptop />*/}
       </div>
     </div>
   );
