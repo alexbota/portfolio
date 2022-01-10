@@ -1,32 +1,11 @@
 import React from 'react';
-import { useRive } from 'rive-react';
-
-function Laptop() {
-  const params = {
-    src: 'laptop.riv',
-    autoplay: false,
-  };
-
-  const { RiveComponent, rive } = useRive(params);
-
-  function onMouseEnter() {
-    if (rive) {
-      rive.play();
-    }
-  }
-
-  return (
-    <div className="w-80 h-80 lg:w-110 lg:h-110 z-10 relative top-40 -mt-40 md:static md:top-0">
-      <RiveComponent onMouseEnter={onMouseEnter} />
-    </div>
-  );
-}
+import hero from '../../images/hero.jpeg'
 
 const Hero = () => {
   return (
     <div className="mx-6">
-      <div className="container mx-auto max-w-screen-lg mt-14 md:mt-32 flex flex-col md:flex-row md:mb-16 md:mt-0 items-center justify-center">
-        <div className="max-w-2xl">
+      <div className="container mx-auto max-w-screen-lg mt-14 md:mt-32 flex flex-col md:flex-row md:mt-0 items-center justify-center">
+        <div className="max-w-2xl mb-12">
           <h1 className="text-xl md:text-2xl mb-2 text-main-primary">
             Better design better experiences.
           </h1>
@@ -46,7 +25,9 @@ const Hero = () => {
             Get in touch
           </button>
         </div>
-        <Laptop />
+        <div className="h-28">
+          <img className="rounded" src={hero} alt=""/>
+        </div>
       </div>
     </div>
   );
